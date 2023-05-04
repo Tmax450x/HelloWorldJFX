@@ -1,5 +1,6 @@
-package sample;
+package com.compnay;
 
+import helper.JDBC;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -19,6 +20,7 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         JDBC.makeConnection();
-        launch(args);
+        //launch(args);
+        JDBC.closeConnection();
     }
 }
