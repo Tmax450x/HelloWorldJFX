@@ -1,4 +1,4 @@
-package com.compnay;
+package controller;
 
 public class Controller {
 }

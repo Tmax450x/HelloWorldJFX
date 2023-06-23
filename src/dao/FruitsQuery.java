@@ -1,6 +1,4 @@
-package helper;
-
-import com.mysql.cj.protocol.Resultset;
+package dao;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

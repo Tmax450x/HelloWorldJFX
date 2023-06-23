@@ -1,7 +1,5 @@
 package com.compnay;
 
-import helper.FruitsQuery;
-import helper.JDBC;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -12,7 +10,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../../view/sample.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
@@ -20,7 +18,9 @@ public class Main extends Application {
 
 
     public static void main(String[] args) throws Exception {
-        JDBC.makeConnection();
+        //JDBC.makeConnection();
+
+        System.out.println("application start");
 
 //        int rowsAffected = FruitsQuery.insert("cherries", 1);
 //
@@ -49,10 +49,10 @@ public class Main extends Application {
 //            System.out.println("Delete Failed");
 //        }
 
-        FruitsQuery.select(3);
+        //FruitsQuery.select(3);
 
 
         //launch(args);
-        JDBC.closeConnection();
+        //JDBC.closeConnection();
     }
 }
